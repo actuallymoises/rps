@@ -1,4 +1,4 @@
-alert('This game is best on Google Chrome. To play...\n\n1. Enter F12 on your keyboard, then refresh the page.\n   (You must hit OK first to complete step 1).\n2. Type the following command under the "Console" tab and hit\n    enter:\n    console.log(playGame());\n3. Hit OK')
+alert('This game is best on Google Chrome. Take a picture of these instructions and follow them from your phone! To play...\n\n1. Enter F12 on your keyboard.\n   (You must hit OK first to complete step 1).\n2. Type the following command under the "Console" tab and hit\n    enter:\n    console.log(playGame());')
 let getComputerChoice = function () {
     function randomNumber() {
      return Math.floor(Math.random() * 3) + 1;
