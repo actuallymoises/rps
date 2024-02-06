@@ -61,7 +61,7 @@ function playGame() {
             playerScore = ++playerScore }
         else computerScore = ++computerScore
     }
-alert('Welcome to Ultimate RPS! You will be playing against Jarvis. Best of 5 wins the game!')
+alert('Welcome to Ultimate Rock Paper Scissors! You will be playing against Jarvis. Best of 5 wins the game!')
 scoreCalc();
     console.log(`You: ${playerScore}`)
     console.log(`Jarvis: ${computerScore}`)
