@@ -51,7 +51,6 @@ let playRound = function () {
 }
 
 function playGame() {
-    alert('Welcome to Ultimate RPS! You will be playing against Jarvis. Best of 5 wins the game!')
     let playerScore = 0
     let computerScore = 0
     let scoreCalc = function() {
@@ -59,18 +58,38 @@ function playGame() {
             playerScore = ++playerScore }
         else computerScore = ++computerScore
     }
+alert('Welcome to Ultimate RPS! You will be playing against Jarvis. Best of 5 wins the game!')
 scoreCalc();
+    console.log(`You: ${playerScore}`)
+    console.log(`Jarvis: ${computerScore}`)
 scoreCalc();
+    console.log(`You: ${playerScore}`)
+    console.log(`Jarvis: ${computerScore}`)
 scoreCalc();
+    console.log(`You: ${playerScore}`)
+    console.log(`Jarvis: ${computerScore}`)
 scoreCalc();
+    console.log(`You: ${playerScore}`)
+    console.log(`Jarvis: ${computerScore}`)
 scoreCalc();
+    console.log(`You: ${playerScore}`)
+    console.log(`Jarvis: ${computerScore}`)
+}
   function winner() {
         if (playerScore > computerScore) {
-            alert('You win! You beat Jarvis!')
-            return 'You win! You beat Jarvis!'
+            console.log('You win! You beat Jarvis!')
+            console.log('Final Score:')
+            console.log(`You - ${playerScore}`)
+            console.log(`Jarvis - ${computerScore}`)
+            alert('You win! You beat Jarvis! Hit OK to see results.')
         }
-        else alert('You lose! Jarvis beat you!')
-            return 'You lose! Jarvis beat you!'
+        else { 
+            console.log('You lose! Jarvis beat you!')
+            console.log('Final Score:')
+            console.log(`You - ${playerScore}`)
+            console.log(`Jarvis - ${computerScore}`)
+            alert('You lose! Jarvis beat you! Hit OK to see results.')
+        }
     }
+
  winner();
-}
